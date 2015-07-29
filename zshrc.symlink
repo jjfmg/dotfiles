@@ -16,3 +16,7 @@ export NVM_DIR="/home/joshua/.nvm"
 
 # rbenv
 eval "$(rbenv init -)"
+
+# aliases
+alias git=hub
+alias compose=docker-compose
