@@ -1,0 +1,102 @@
+set nocompatible
+let mapleader=","
+
+" pathogen
+"
+execute pathogen#infect()
+
+" my favorite thing
+"
+imap jj <Esc>
+
+" general
+"
+set number
+set backspace=indent,eol,start
+set history=1000
+set showcmd
+set showmode
+set gcr=a:blinkon0
+set autoread
+set hidden
+syntax on
+set noswapfile
+set nobackup
+set nowb
+
+" colors
+"
+set t_Co=256
+set background=dark
+colorscheme solarized
+
+" disable beep and flash
+"
+set noerrorbells visualbell t_vb=
+
+" indentation
+"
+set autoindent
+set smartindent
+set smarttab
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+filetype plugin on
+filetype indent on
+set list listchars=tab:\ \ ,trail:·
+set nowrap
+set linebreak
+
+" folds
+"
+set foldmethod=indent
+set foldnestmax=3
+set nofoldenable
+
+" completion
+"
+set wildmode=list:longest
+set wildmenu
+set wildignore=*.o,*.obj,*~
+set wildignore+=*vim/backups*
+set wildignore+=*sass-cache*
+set wildignore+=*DS_Store*
+set wildignore+=vendor/rails/**
+set wildignore+=vendor/cache/**
+set wildignore+=*.gem
+set wildignore+=log/**
+set wildignore+=tmp/**
+set wildignore+=*.png,*.jpg,*.gif
+
+" scrolling
+"
+set scrolloff=8
+set sidescrolloff=15
+set sidescroll=1
+
+" search
+"
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+
+" markdown is special
+"
+autocmd FileType markdown setlocal spell
+autocmd FileType markdown setlocal complete+=kspell
+autocmd FileType markdown setlocal textwidth=80
+autocmd FileType markdown setlocal formatoptions+=a
+
+" nginx syntax
+"
+au BufRead,BufNewFile /srv/nginx/*,/srv/nginx/conf.d/* setfiletype nginx
+
+" Explorer and tabs
+"
+let mapleader=" "
+map <leader>k :Explore<cr>
+let g:netrw_liststyle=3
+set switchbuf=usetab,newtab
