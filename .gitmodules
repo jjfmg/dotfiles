@@ -7,3 +7,18 @@
 [submodule "vim.symlink/bundle/nginx-vim-syntax"]
 	path = vim.symlink/bundle/nginx-vim-syntax
 	url = https://github.com/evanmiller/nginx-vim-syntax.git
+[submodule "vim.symlink/bundle/supertab"]
+	path = vim.symlink/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "vim.symlink/bundle/vim-css3-syntax"]
+	path = vim.symlink/bundle/vim-css3-syntax
+	url = https://github.com/hail2u/vim-css3-syntax.git
+[submodule "vim.symlink/bundle/vim-javascript"]
+	path = vim.symlink/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "vim.symlink/bundle/php.vim"]
+	path = vim.symlink/bundle/php.vim
+	url = https://github.com/StanAngeloff/php.vim.git
+[submodule "vim.symlink/bundle/phpcomplete.vim"]
+	path = vim.symlink/bundle/phpcomplete.vim
+	url = https://github.com/shawncplus/phpcomplete.vim.git
