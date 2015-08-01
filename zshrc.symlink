@@ -19,4 +19,6 @@ eval "$(rbenv init -)"
 
 # aliases
 alias git=hub
+alias gca="git commit -a"
 alias compose=docker-compose
+
